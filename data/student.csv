@@ -1,0 +1,16 @@
+StudentID,Name,Department,Maths,Science,English,ComputerScience,Attendance
+101,Aarav Sharma,CSE,85,90,78,92,88
+102,Priya Verma,ECE,72,68,80,75,82
+103,Rohan Gupta,CSE,95,92,88,96,95
+104,Neha Singh,EEE,60,55,65,70,75
+105,Amit Kumar,CSE,45,50,52,48,65
+106,Sneha Patel,IT,88,85,90,89,90
+107,Vikram Malhotra,ECE,78,82,75,80,85
+108,Anjali Rao,IT,92,94,95,98,96
+109,Rahul Verma,EEE,50,48,60,55,70
+110,Pooja Mishra,CSE,82,80,85,88,89
+111,Karan Joshi,IT,65,70,68,72,78
+112,Divya Nair,ECE,90,88,92,94,92
+113,Manish Kumar,EEE,55,60,58,62,72
+114,Simran Kaur,CSE,84,86,82,85,86
+115,Akshay Kumar,IT,70,72,74,76,80

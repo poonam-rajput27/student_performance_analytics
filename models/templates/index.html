@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Analytics Dashboard</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans leading-normal tracking-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-indigo-600 text-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">📊 Student Analytics System</h1>
+            <span class="text-sm bg-indigo-700 px-3 py-1 rounded-full">Python • NumPy • Pandas</span>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-6 py-8">
+        
+        <!-- Header Section -->
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">Class Performance Overview</h2>
+            <p class="text-gray-600 mt-1">Automated metrics, grade evaluation, and subject-wise analysis.</p>
+        </div>
+
+        <!-- Summary Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <p class="text-sm font-medium text-gray-500">Total Students</p>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">15</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <p class="text-sm font-medium text-gray-500">Passed Students</p>
+                <p class="text-3xl font-bold text-green-600 mt-2">13</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <p class="text-sm font-medium text-gray-500">Failed Students</p>
+                <p class="text-3xl font-bold text-red-600 mt-2">2</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <p class="text-sm font-medium text-gray-500">Overall Class Average</p>
+                <p class="text-3xl font-bold text-blue-600 mt-2">78.45%</p>
+            </div>
+        </div>
+
+        <!-- Data Table Section -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-8">
+            <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-800">Student Records & Grades</h3>
+                <span class="text-xs text-gray-500 bg-gray-100 px-2.5 py-1 rounded">Source: data/student.csv</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-50 text-gray-600 text-sm uppercase tracking-wider">
+                            <th class="py-3 px-6">ID</th>
+                            <th class="py-3 px-6">Name</th>
+                            <th class="py-3 px-6">Department</th>
+                            <th class="py-3 px-6">Average</th>
+                            <th class="py-3 px-6">Grade</th>
+                            <th class="py-3 px-6">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-6">101</td>
+                            <td class="py-3 px-6 font-medium">Aarav Sharma</td>
+                            <td class="py-3 px-6">CSE</td>
+                            <td class="py-3 px-6">86.25%</td>
+                            <td class="py-3 px-6"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded text-xs font-bold">A</span></td>
+                            <td class="py-3 px-6 text-green-600 font-semibold">Pass</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-6">103</td>
+                            <td class="py-3 px-6 font-medium">Rohan Gupta</td>
+                            <td class="py-3 px-6">CSE</td>
+                            <td class="py-3 px-6">92.75%</td>
+                            <td class="py-3 px-6"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded text-xs font-bold">A</span></td>
+                            <td class="py-3 px-6 text-green-600 font-semibold">Pass</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-6">105</td>
+                            <td class="py-3 px-6 font-medium">Amit Kumar</td>
+                            <td class="py-3 px-6">CSE</td>
+                            <td class="py-3 px-6">48.75%</td>
+                            <td class="py-3 px-6"><span class="bg-red-100 text-red-800 px-2 py-0.5 rounded text-xs font-bold">F</span></td>
+                            <td class="py-3 px-6 text-red-600 font-semibold">Fail</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-6">108</td>
+                            <td class="py-3 px-6 font-medium">Anjali Rao</td>
+                            <td class="py-3 px-6">IT</td>
+                            <td class="py-3 px-6">94.75%</td>
+                            <td class="py-3 px-6"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded text-xs font-bold">A</span></td>
+                            <td class="py-3 px-6 text-green-600 font-semibold">Pass</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-6 text-center text-gray-500 text-sm">
+        <p>Student Performance Analytics System &bull; EWB Courses Python with AI Internship Project</p>
+    </footer>
+
+</body>
+</html>
